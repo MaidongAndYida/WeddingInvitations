@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5">
+    <meta name="format-detection" content="telephone=no">
+    <title>徐先生&蔡女士的婚礼邀请</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="public/css/googleapis.css">
+    <link rel="stylesheet" href="public/css/flickity.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <link rel="stylesheet" href="public/css/uikit.css">
+    <link rel="stylesheet" href="public/css/invitation-dark.css">
+    <link href="public/css/aos.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: Hannotate SC;
+            color: #D6BA8D !important;
+        }
+    </style>
+    <style>
+        body{background-color:#1e1d1b;color:#fff;background-image:url("assets/images/diamond.svg")}.yn-color{font-family:KaiTi;background:#d6ba8d;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    </style>
+    <script src="assets/js/uikit.min.js"></script>
+</head>
+<body uk-scrollspy="target: .yn-anim; cls: uk-animation-fade; delay: 350">
+    <div id="root">
+        <router-view></router-view>
+
+        <div id="envelope-invitation" bg-close="false" class="uk-modal uk-flex" tabindex="0">
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center " style="background: transparent; background-image: url(https://xytmusic.oss-cn-beijing.aliyuncs.com/evp.png); padding:20px 15px 60px 15px; background-position: center;
+            background-repeat: unset;
+            background-size: cover; border-radius:16px;  height: 400px;
+            width: 342px;
+            ">
+
+                <div class=" tw-mt-24  tw-text-center">
+                    <p class="uk-text-medium uk-margin-remove-bottom txt-simple">HALLO ✌</p>
+                    
+                                            <div class="tw-mb-3"></div>
+                    
+                    <p class="uk-text-medium txt-simple">我们诚邀您参加我们的婚礼</p>
+                    <h2 class="yn-color tw-mt-4" style="line-height:1; margin-bottom:9px !important; font-size:28px;">
+                        徐先生 &amp; 蔡女士	</h2>
+                </div>
+
+                <div class="tw-mt-20">
+                    <button id="play-sound" class="uk-modal-close tw-bg-white tw-text-brown-dark tw-text-xs tw-tracking-widest tw-py-2 tw-px-4 tw-rounded-lg tw-w-3/5" type="button">OPEN INVITATION</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>   
+</body>
+
+<script src="public/js/myapp.js"></script>
+<script type="text/javascript">
+    window.onload = () => {
+        document.getElementById('audio').muted = false;
+        document.getElementById("audio").style.display = "none";
+    }
+</script>
+</html>
